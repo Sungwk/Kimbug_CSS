@@ -1,21 +1,17 @@
 * {
   box-sizing: border-box;
+  margin : 0;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  color: #212529
 }
 
-.box {
-  margin: 0 auto;
-  display: block;
-  box-sizing: border-box;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 15px;
-  border: solid black 3px;
+span {
+  width: 700px;
+  height:300px;
+  display: inline-block;
+  color : #ffffff;
   background-color: #0066ff;
-  padding: 40px 50px;
-  width: 480px;
-  height: 480px;
 }
