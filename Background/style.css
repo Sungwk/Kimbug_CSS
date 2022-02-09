@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-image: url(./assets/icon-favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 0;
+  background-color: #fff;
+  margin: 12px;
+}
+
+.card-image {
+  width: 300px;
+  height: 200px;
+  background-image: url(./assets/img-house.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.card {
+  display: flex;
+  width: 840px;
+  height: 248px;
+  padding: 24px;
+  position: relative;
+  background-color: #e5e5e5;
+}
+.card-content {
+  margin-left: 24px;
+}
+.plus-badge {
+  width: 48px;
+  height: 22px;
+  padding: 1px 8px;
+  background-color: #92174d;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin-right: 8px;
+}
+
+.font_grey {
+  color: #7d858f;
+}
+
+.card-header {
+  display: flex;
+}
+.property-rate::before {
+  content: "";
+  background-image: url("./assets/icon-star.svg");
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.property-rate {
+  position: absolute;
+  right: 24px;
+}
+
+.property-rate > strong,
+span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-title {
+  margin-top: 9px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
