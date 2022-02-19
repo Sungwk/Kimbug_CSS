@@ -6,11 +6,14 @@
   box-sizing: border-box;
   margin: 0;
 }
-body {
+body,
+input,
+button {
   font-family: "DM Sans", sans-serif;
 }
 button {
-  font-family: "DM Sans", sans-serif;
+  border: 0;
+  outline: 0;
 }
 button:hover {
   transform: scale(1.1);
@@ -152,16 +155,162 @@ button:hover {
     line-height: 1.5;
     letter-spacing: -0.01em;
   }
-  .program1,
-  .program2,
-  .program3 {
-    padding: 24px;
+  .programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .image1 {
+  .program_card {
     width: 290px;
     height: 291px;
-    background-image: url("./assets/img-fulltime-campus.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .program img {
+    width: 142px;
+    height: 195px;
+    margin-bottom: 16px;
+  }
+  .programtitle {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.02;
+    font-weight: bold;
+  }
+  .curriculum {
+    padding: 80px 15px;
+  }
+  .cur_header {
+    margin-bottom: 48px;
+  }
+  .cur_header_category {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02;
+    font-weight: bold;
+    color: #0189d1;
+    margin-bottom: 8px;
+  }
+  .cur_header_title {
+    font-size: 34px;
+    line-height: 1.0588235294;
+    letter-spacing: -0.03;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  .cur_header_description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01;
+    margin-bottom: 32px;
+  }
+  .cur_button {
+    width: 140px;
+    height: 48px;
+    background-color: #3040c4;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.05;
+    font-weight: bold;
+  }
+  .cur_detail_description {
+    font-size: 15px;
+    line-height: 1.4666666667;
+    letter-spacing: -0.01;
+  }
+  .up_CDD {
+    margin-bottom: 40px;
+  }
+  .banner {
+    padding: 40px 15px;
+    background-color: #f2f8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ciaimage {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .ciaimage img {
+    width: 190px;
+    height: auto;
+  }
+  .banner_header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .banner_header_title {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: -0.05;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .banner_header_description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01;
+  }
+  .banner_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_form_textbox {
+    width: 100%;
+    height: 48px;
+    border: 0;
+    border-radius: 2px;
+    padding: 2px 16px;
+    text-align: left;
+    color: #7b7b7e;
+    margin-bottom: 8px;
+  }
+  .banner_form_button {
+    width: 100%;
+    height: 48px;
+    background-color: #3040c4;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.05;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .banner_form_text {
+    font-size: 13px;
+    line-height: 1.5384615385;
+    color: #7b7b7e;
+  }
+  .footer {
+    padding: 24px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer a {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: -0.01;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #807f81;
+  }
+  .footer a:last-child {
+    margin-bottom: 0;
   }
 }
